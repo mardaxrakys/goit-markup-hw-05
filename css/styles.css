@@ -561,7 +561,9 @@ img {
   background-color: var(--color-green);
 }
 
-/* #region ----- form -----*/
+/* #endregion */
+
+/* #region -----footer form -----*/
 .footer__form-wrapper {
   margin-top: 20px;
   text-align: left;
@@ -615,8 +617,6 @@ img {
 .footer__form-button:hover {
   background-color: #3949ab;
 }
-/* #endregion */
-
 /* #endregion */
 
 /* #region Modal Window */
