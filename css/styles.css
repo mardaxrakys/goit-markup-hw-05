@@ -249,7 +249,8 @@ img {
 
 .hero__button:hover,
 .hero__button:focus {
-  background-color: var(--color-ocean);
+  background-color: #404bbf;
+  border: none;
 }
 /* #endregion */
 
