@@ -604,6 +604,16 @@ img {
 }
 
 .footer__form-button {
+  display: flex;
+  justify-content: center;
+  min-width: 165px;
+  height: 40px;
+  align-items: center;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
   padding: 10px 16px;
   font-size: 16px;
   color: #fff;
