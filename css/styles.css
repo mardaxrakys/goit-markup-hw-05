@@ -409,6 +409,7 @@ img {
 }
 
 .gallery__item:hover {
+  transform: translateY(0%);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -425,8 +426,7 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.gallery__link:hover .gallery__overley-text,
-.gallery__link:focus .gallery__overley-text {
+.gallery__item:hover .gallery__overley-text {
   transform: translateY(0);
 }
 
@@ -449,6 +449,10 @@ img {
   background-color: var(--color-iris);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--color-cloud);
+}
+
+.gallery__overley-text:hover {
+  transform: translateY(0);
 }
 
 .gallery__wrapper {
@@ -557,7 +561,7 @@ img {
   background-color: var(--color-green);
 }
 
-/* #region form */
+/* #region ----- form -----*/
 .footer__form-wrapper {
   margin-top: 20px;
   text-align: left;
@@ -575,7 +579,7 @@ img {
 .footer__form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 24px;
 }
 
 .footer__form-label {
@@ -584,10 +588,17 @@ img {
 }
 
 .footer__form-input {
-  padding: 8px 12px;
-  font-size: 16px;
-  border: 1px solid #ddd;
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  color: #ffffff;
 }
 
 .footer__form-button {
