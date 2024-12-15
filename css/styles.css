@@ -564,9 +564,12 @@ img {
 }
 
 .footer__form-text {
-  font-size: 18px;
   color: #fff;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer__form {
