@@ -627,6 +627,11 @@ img {
 .footer__form-button:hover {
   background-color: #3949ab;
 }
+
+.svg-form {
+  margin-left: 16px;
+}
+
 /* #endregion */
 
 /* #region Modal Window */
