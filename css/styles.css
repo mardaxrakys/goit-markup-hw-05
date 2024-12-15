@@ -688,6 +688,7 @@ img {
 .modal__button-close:focus {
   background-color: #404bbf;
   border: none;
+  outline: none;
 }
 
 .modal__icon-close {
