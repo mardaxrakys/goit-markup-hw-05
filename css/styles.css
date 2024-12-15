@@ -557,6 +557,52 @@ img {
   background-color: var(--color-green);
 }
 
+/* #region form */
+.footer__form-wrapper {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.footer__form-text {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__form-label {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer__form-input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.footer__form-button {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer__form-button:hover {
+  background-color: #3949ab;
+}
+/* #endregion */
+
 /* #endregion */
 
 /* #region Modal Window */
