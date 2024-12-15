@@ -614,24 +614,26 @@
 
         <!-- #region footer ----- form -->
         <!-- Новий контейнер для форми -->
-        <div class="footer__form-wrapper">
-          <p class="footer__form-text">Subscribe</p>
-          <form class="footer__form">
-            <label class="footer__form-label">
-              Email address:
+        <div class="footer__subscribe-wrapper">
+          <p class="footer__subscribe-text">Subscribe</p>
+          <form class="footer__subscribe-form">
+            <label class="footer__subscribe-label">
               <input
-                class="footer__form-input"
+                class="footer__subscribe-input"
                 type="email"
-                name="email"
+                name="email-field"
                 placeholder="E-mail"
-                required
               />
             </label>
-            <button type="submit" class="footer__form-button">
+            <button
+              type="submit"
+              name="email-subscribe-button"
+              class="footer__subscribe-button"
+            >
               Subscribe
               <svg
-                class="svg-form"
-                aria-label="telegram"
+                class="footer__subscribe-icon"
+                aria-label="icon-send"
                 width="24"
                 height="24"
               >
