@@ -667,7 +667,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
@@ -698,8 +697,8 @@ img {
 
 .modal__button-close:hover,
 .modal__button-close:focus {
-  background-color: #404bbf !important;
-  border: none !important;
+  background-color: #404bbf;
+  border: none;
 }
 
 .modal__icon-close {
@@ -712,6 +711,14 @@ img {
   fill: #ffffff;
 }
 
+.modal__text {
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
 .form-group {
   margin-bottom: 16px;
 }
@@ -721,6 +728,8 @@ img {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .input-wrapper {
@@ -759,6 +768,8 @@ img {
   width: 100%;
   height: 120px;
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -766,6 +777,7 @@ img {
   padding: 8px 16px;
   outline: transparent;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea:focus {
@@ -777,17 +789,33 @@ img {
   align-items: center;
   font-size: 12px;
   color: #8e8f99;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .checkbox-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  fill: transparent;
   margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden:checked + .checkbox-label .checkbox-custom {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.link {
+  color: #4d5ae5;
 }
 
 .form-submit {
@@ -798,6 +826,7 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
