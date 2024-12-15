@@ -698,8 +698,8 @@ img {
 
 .modal__button-close:hover,
 .modal__button-close:focus {
-  background-color: #404bbf;
-  border: none;
+  background-color: #404bbf !important;
+  border: none !important;
 }
 
 .modal__icon-close {
