@@ -701,14 +701,14 @@ img {
   border: none;
 }
 
-.modal__icon-close {
-  fill: rgba(46, 47, 66, 0.8);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal__button-close:hover .modal__icon-close,
 .modal__button-close:focus .modal__icon-close {
   fill: #ffffff;
+}
+
+.modal__icon-close {
+  fill: rgba(46, 47, 66, 0.8);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__text {
