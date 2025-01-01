@@ -665,54 +665,54 @@ img {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
-  border-radius: 4px;
+  background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: var(--color-dairy);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
   padding: 72px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-close {
-  padding: 0;
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--color-cornflower);
+  background-color: #e7e9fc;
   cursor: pointer;
+  padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-close:hover,
 .modal__button-close:focus {
-  background-color: #404bbf; /* Колір фону при hover та focus */
-  border: none; /* Видалення бордера */
+  background-color: #404bbf;
+  border: none;
 }
 
 .modal__icon-close {
-  fill: var(--color-navy-blue);
+  fill: rgba(46, 47, 66, 0.8);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-close:hover .modal__icon-close,
 .modal__button-close:focus .modal__icon-close {
-  fill: #ffffff; /* Білий колір іконки */
+  fill: #ffffff;
 }
 
 .modal__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: center;
+  letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 16px;
 }
@@ -746,15 +746,15 @@ img {
 }
 
 .modal__input:focus {
-  border-color: #4d5ae5; /* Зміна кольору рамки при focus */
+  border-color: #4d5ae5;
 }
 
 .modal__input:focus + .modal__icon {
-  fill: #4d5ae5; /* Зміна кольору іконки при focus */
+  fill: #4d5ae5;
 }
 
 .modal__icon {
-  fill: rgba(46, 47, 66, 0.4);
+  fill: rgba(46, 47, 66, 0.8);
   position: absolute;
   left: 16px;
   top: 50%;
@@ -783,7 +783,7 @@ img {
 }
 
 .modal__text-field:focus {
-  border-color: #4d5ae5; /* Зміна кольору рамки textarea при focus */
+  border-color: #4d5ae5;
 }
 
 .modal__check-wrapper {
@@ -796,20 +796,24 @@ img {
   position: absolute;
   width: 1px;
   height: 1px;
-  opacity: 0;
-  pointer-events: none;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
 }
 
 .modal__check-input:checked + .modal__check-text .modal__check-box {
-  background-color: #404bbf; /* Фон */
-  border: none; /* Видалення бордера */
+  background-color: #404bbf;
+  border: none;
 }
 
 .modal__check-input:checked
   + .modal__check-text
   .modal__check-box
   .modal__icon-check {
-  fill: #f4f4fd; /* Білий колір іконки */
+  fill: #f4f4fd;
 }
 
 .modal__check-text {
@@ -827,8 +831,8 @@ img {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -837,7 +841,7 @@ img {
 
 .modal__button-submit {
   display: block;
-  width: 100%;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   background-color: #4d5ae5;
@@ -852,7 +856,7 @@ img {
 
 .modal__button-submit:hover,
 .modal__button-submit:focus {
-  background-color: #404bbf; /* Колір фону при hover та focus */
+  background-color: #404bbf;
 }
 
 /* #endregion */
