@@ -691,10 +691,16 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button-close:hover,
+/* При ховері */
+.modal__button-close:hover {
+  background-color: #404bbf; /* Зміна кольору фону */
+  border: none; /* Видалення бордера */
+}
+
+/* При фокусі */
 .modal__button-close:focus {
-  background-color: #404bbf;
-  border: none;
+  background-color: #404bbf; /* Зміна кольору фону */
+  border: none; /* Видалення бордера */
 }
 
 .modal__icon-close {
@@ -702,9 +708,14 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button-close:hover .modal__icon-close,
+/* При ховері на кнопку змінюється стиль іконки */
+.modal__button-close:hover .modal__icon-close {
+  fill: #ffffff; /* Білий колір іконки */
+}
+
+/* При фокусі на кнопку змінюється стиль іконки */
 .modal__button-close:focus .modal__icon-close {
-  fill: #ffffff;
+  fill: #ffffff; /* Білий колір іконки */
 }
 
 .modal__title {
@@ -851,6 +862,7 @@ img {
   color: #404bbf;
 }
 
+/* Кнопка відправки */
 .modal__button-submit {
   display: block;
   min-width: 169px;
@@ -868,9 +880,16 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button-submit:hover,
+/* При ховері на кнопку */
+.modal__button-submit:hover {
+  background-color: #404bbf; /* Зміна кольору фону */
+  border: none; /* Видалення бордера */
+}
+
+/* При фокусі на кнопку */
 .modal__button-submit:focus {
-  background-color: #404bbf;
+  background-color: #404bbf; /* Зміна кольору фону */
+  border: none; /* Видалення бордера */
 }
 
 /* #endregion */
