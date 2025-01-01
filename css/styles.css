@@ -693,7 +693,7 @@ img {
 
 .modal__button-close:hover,
 .modal__button-close:focus {
-  background-color: var(--color-ocean);
+  background-color: #404bbf;
   border: none;
   fill: var(--color-white);
 }
